@@ -275,5 +275,5 @@ np.round(x_train.describe(),1)
 # In[ ]:
 
 
-#tips data set standaradization and normalization
+
 
