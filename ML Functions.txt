@@ -48,6 +48,8 @@ Series() : returns a table with index and values.
 
 DataFrame(data) : make a dataframe of the data.
 
+columns() : returns all the columns in a dataframe
+
 head(number of rows) : returns no. of given rows from starting. (default 5)
 
 tail(number of rows) : returns no. of given rows from end. (default 5)
@@ -66,19 +68,18 @@ value_counts() : works on specific column and returns freq of each values in it.
 
 loc[rows, columns (names) ] : returns specific portion of data frame. It is used when selected by labels.
 
-iloc[rows, columns(names or index)] : returns specific portion of data frame. It is used when selected by postion.
+iloc[rows, columns(names or index)] : returns specific portion of data frame. It is used when selected by position.
 
 isnull() : It will returns true if you have missing values otherwise return False.
 
-sum() : We can check Total missing values in our dataframe.
+sum() : We can check Total missing values in our data frame.
 
 dropna() : remove rows containing none values.
 
+crosstab(dependent column, Independent column) : display table containing positive output of independent column based on dependent column.
 
 
-<-------------------- Matplotlib Functions ------------------->
-
-
+---------------------------------------------------------------------------
 1. Univeriate Analysis ==> Analysis on single Independent column
 2. Biveriate Analysis ==> Analysis on two columns
 3. Multiveriate Analysis ==> Analysis on more than 2 columns
@@ -88,11 +89,45 @@ Data types
 1. Numerical Data => Continuous
 2. Categorical Data => Discrete
 
+---------------------------------------------------------------------------
 
 
 
+<-------------------- Matplotlib Functions ------------------->
 
 
+
+plot(kind = graph name) : plot graphs
+
+hist(column) : hist graph
+
+
+
+---------------------------------------------------------------------
+In BoxPlot
+#For Find our outlier
+
+# 1.Lower fence
+# 2.25% Data
+# 3.IQR (Inter Quartile Range)(75%-25%)
+# 4.75% Data
+# Upper fence
+
+---------------------------------------------------------------------
+
+
+<-------------------- Seaborn Functions ------------------->
+
+
+countplot(x = column) : works on categorical data, make colored bar graph for a columns.
+
+distplot(column) : histgraph + line
+
+boxplot(x = column) : boxplot => |--|_|--|
+
+scatterplot(x = 1 column, y = 2 column)
+
+heatmap(table like crosstab table) : colored square graph 
 
 
 
