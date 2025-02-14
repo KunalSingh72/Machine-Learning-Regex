@@ -131,6 +131,7 @@ heatmap(table like crosstab table) : colored square graph
 
 
 
+<-------------------- Plotly Functions ------------------->
 
 
 
